@@ -13,12 +13,10 @@
     >
       <source src="~assets/videos/hero.mp4" type="video/mp4" />
     </video>
-    <img
+    <div
       v-show="isLoading"
-      src="~assets/images/hero.png"
-      alt="background hero image"
-      class="w-full 100vh shadow-lg relative z-0 transition ease-in-out duration-700"
-    />
+      class="hero_placeholder object-cover shadow-lg relative z-0 transition ease-in-out duration-700"
+    ></div>
     <div class="absolute hero_section">
       <div
         class="flex flex-wrap flex-col px-6 text-center xl:text-left xl:px-20"
@@ -62,6 +60,12 @@ export default {
   top: 20%;
   left: 0px;
   right: 0px;
+}
+.hero_placeholder {
+  width: 100vw;
+  height: 100vh;
+  background: url('~assets/images/hero.png');
+  background-size: cover;
 }
 @media (min-width: 1280px) {
   .hero_section {
