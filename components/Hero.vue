@@ -17,7 +17,7 @@
       v-show="isLoading"
       src="~assets/images/hero.png"
       alt="background hero image"
-      class="object-cover shadow-lg relative z-0 transition ease-in-out duration-700"
+      class="w-full 100vh shadow-lg relative z-0 transition ease-in-out duration-700"
     />
     <div class="absolute hero_section">
       <div
