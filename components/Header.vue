@@ -40,23 +40,24 @@
         ></path>
       </svg>
     </div>
-
-    <div
-      v-show="showMenu"
-      class="absolute top-0 bottom-0 left-0 right-0 bg-black z-50"
-      style="--bg-opacity: 0.9"
-    >
+    <transition name="fade">
       <div
-        class="flex flex-col flex-wrap text-white text-center text-2xl font-semibold px-6 py-12 mt-20"
+        v-show="showMenu"
+        class="absolute top-0 bottom-0 left-0 right-0 bg-black z-50"
+        style="--bg-opacity: 0.9"
       >
-        <div class="mb-4">About Us</div>
-        <div class="mb-4">Our Services</div>
-        <div class="mb-4">Our Clients</div>
-        <div class="mb-4">Training Offered</div>
-        <div class="mb-4">Contact Us</div>
-        <div class="mb-4">Careers</div>
+        <div
+          class="flex flex-col flex-wrap text-white text-center text-2xl font-semibold px-6 py-12 mt-20"
+        >
+          <div class="mb-4">About Us</div>
+          <div class="mb-4">Our Services</div>
+          <div class="mb-4">Our Clients</div>
+          <div class="mb-4">Training Offered</div>
+          <div class="mb-4">Contact Us</div>
+          <div class="mb-4">Careers</div>
+        </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 <script>
@@ -68,3 +69,12 @@ export default {
   },
 }
 </script>
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>
