@@ -1,22 +1,7 @@
 <template>
   <div class="relative">
-    <video
-      v-show="!isLoading"
-      ref="myVideo"
-      poster="~assets/images/hero.png"
-      width="100%"
-      class="object-cover shadow-lg relative z-0 transition ease-in-out duration-700"
-      style="height: 100vh"
-      muted
-      autoplay
-      @ended="onEnd()"
-      v-bind:onloadeddata="(isLoading = false)"
-    >
-      <source src="~assets/videos/hero.mp4" type="video/mp4" />
-    </video>
     <div
-      v-show="isLoading"
-      class="hero_placeholder object-cover shadow-lg relative z-0 transition ease-in-out duration-700"
+      class="hero_placeholder bg-orange-900 object-cover shadow-lg relative z-0 transition ease-in-out duration-700"
     ></div>
     <div class="absolute hero_section">
       <div
@@ -48,12 +33,6 @@ export default {
       isLoading: true,
     }
   },
-  methods: {
-    onEnd() {
-      this.$refs.myVideo.currentTime = 6
-      this.$refs.myVideo.play()
-    },
-  },
 }
 </script>
 <style scoped>
@@ -65,7 +44,8 @@ export default {
 .hero_placeholder {
   width: 100vw;
   height: 100vh;
-  background: url('~assets/images/hero.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.459), rgba(184, 83, 1, 0.445)),
+    url('~assets/images/hero.png');
   background-size: cover;
 }
 @media (min-width: 1280px) {
