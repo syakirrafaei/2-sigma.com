@@ -15,7 +15,7 @@
         <div class="w-full">Careers</div>
       </div>
     </div>
-    <div class="absolute top-0 right-0 mt-6 mr-6" style="z-index: 99">
+    <div class="xl:hidden fixed top-0 right-0 mt-6 mr-6" style="z-index: 99">
       <svg
         @click="showMenu = !showMenu"
         class="w-10 h-10 text-white"
@@ -43,7 +43,7 @@
     <transition name="fade">
       <div
         v-show="showMenu"
-        class="absolute top-0 bottom-0 left-0 right-0 bg-black z-50"
+        class="fixed top-0 bottom-0 left-0 right-0 bg-black z-50"
         style="--bg-opacity: 0.9"
       >
         <div
@@ -66,6 +66,17 @@ export default {
     return {
       showMenu: false,
     }
+  },
+  watch: {
+    showMenu: {
+      immediate: true,
+      handler(showMenu) {
+        if (process.client) {
+          if (showMenu) document.body.style.setProperty('overflow', 'hidden')
+          else document.body.style.removeProperty('overflow')
+        }
+      },
+    },
   },
 }
 </script>
