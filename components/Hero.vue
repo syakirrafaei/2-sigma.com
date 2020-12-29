@@ -3,6 +3,7 @@
     <video
       v-show="!isLoading"
       ref="myVideo"
+      poster="~assets/images/hero.png"
       width="100%"
       class="object-cover shadow-lg relative z-0 transition ease-in-out duration-700"
       style="height: 100vh"
