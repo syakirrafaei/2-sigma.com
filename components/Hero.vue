@@ -1,16 +1,24 @@
 <template>
   <div class="relative">
     <video
+      v-show="!isLoading"
       ref="myVideo"
       width="100%"
-      class="object-cover shadow-lg relative z-0"
+      class="object-cover shadow-lg relative z-0 transition ease-in-out duration-700"
       style="height: 100vh"
       muted
       autoplay
       @ended="onEnd()"
+      v-bind:onloadeddata="(isLoading = false)"
     >
       <source src="~assets/videos/hero.mp4" type="video/mp4" />
     </video>
+    <img
+      v-show="isLoading"
+      src="~assets/images/hero.png"
+      alt="background hero image"
+      class="object-cover shadow-lg relative z-0 transition ease-in-out duration-700"
+    />
     <div class="absolute hero_section">
       <div
         class="flex flex-wrap flex-col px-6 text-center xl:text-left xl:px-20"
@@ -36,9 +44,14 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      isLoading: true,
+    }
+  },
   methods: {
     onEnd() {
-      this.$refs.myVideo.currentTime = 9.5
+      this.$refs.myVideo.currentTime = 6
       this.$refs.myVideo.play()
     },
   },
