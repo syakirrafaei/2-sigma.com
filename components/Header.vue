@@ -49,12 +49,12 @@
         <div
           class="flex flex-col flex-wrap text-white text-center text-2xl font-semibold px-6 py-12 mt-20"
         >
-          <div class="mb-4">About Us</div>
-          <div class="mb-4">Our Services</div>
-          <div class="mb-4">Our Clients</div>
-          <div class="mb-4">Training Offered</div>
-          <div class="mb-4">Contact Us</div>
-          <div class="mb-4">Careers</div>
+          <div class="mb-8">About Us</div>
+          <div class="mb-8">Our Services</div>
+          <div class="mb-8">Our Clients</div>
+          <div class="mb-8">Training Offered</div>
+          <div class="mb-8">Contact Us</div>
+          <div class="mb-8">Careers</div>
         </div>
       </div>
     </transition>
