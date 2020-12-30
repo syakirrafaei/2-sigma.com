@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="fixed hidden xl:flex xl:flex-wrap xl:flex-row w-full bg-transparent px-12 py-6 text-white font-semibold z-10"
+      class="absolute hidden xl:flex xl:flex-wrap xl:flex-row w-full bg-transparent px-12 py-6 text-white font-semibold z-10"
     >
       <div class="flex w-2/5 text-center">
         <div class="w-full">About Us</div>
