@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <section class="relative">
     <div
       class="hero_placeholder bg-orange-900 object-cover shadow-lg relative z-0 transition ease-in-out duration-700"
     ></div>
@@ -26,7 +26,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 export default {

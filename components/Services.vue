@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-full bg-black p-16">
+  <section class="h-screen w-full bg-section p-16">
     <div class="inline-block">
       <div class="text-3xl font-bold text-orange">
         Supercharge your business.
@@ -9,8 +9,9 @@
     <div class="flex flex-row flex-wrap text-white my-8">
       <div class="w-full xl:w-3/5">
         <p class="xl:pr-64 text-lg">
-          After over several years in business, Two Sigma Technologies has
-          served literally hundreds of satisfied clients.
+          Driven by today’s competitive environment and business needs, we have
+          grown tremendously by expanding our operation into several distinct
+          businesses involves:
         </p>
         <div class="flex flex-row flex-wrap mt-16">
           <div class="w-full">
@@ -49,5 +50,12 @@
       </div>
       <div class="w-full xl:w-2/5"></div>
     </div>
-  </div>
+  </section>
 </template>
+<style scoped>
+.bg-section {
+  background: transparent
+    linear-gradient(1deg, #17141b 0%, #18151c 10%, #17141b 92%, #160100 100%) 0%
+    0% no-repeat padding-box;
+}
+</style>
