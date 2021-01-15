@@ -4,11 +4,21 @@
       class="absolute hidden xl:flex xl:flex-wrap xl:flex-row w-full bg-transparent px-12 py-6 text-white font-semibold z-10"
     >
       <div class="flex w-2/5 text-center">
-        <nuxt-link to="/about" class="w-full">About Us</nuxt-link>
-        <nuxt-link to="/our-services" class="w-full">Our Services</nuxt-link>
+        <nuxt-link
+          to="/about"
+          class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
+          >About Us</nuxt-link
+        >
+        <nuxt-link
+          to="/our-services"
+          class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
+          >Our Services</nuxt-link
+        >
         <div class="w-full">Our Clients</div>
       </div>
-      <nuxt-link to="/" class="w-1/5 text-center font-bold"
+      <nuxt-link
+        to="/"
+        class="w-1/5 text-center font-bold hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
         >TWO SIGMA</nuxt-link
       >
       <div class="flex w-2/5 text-center">
