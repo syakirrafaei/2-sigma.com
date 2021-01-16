@@ -1,5 +1,5 @@
 <template>
-  <section class="h-screen w-full bg-section p-16">
+  <section class="min-h-screen w-full bg-section p-16">
     <div class="inline-block">
       <div class="text-3xl font-bold text-orange">
         Supercharge your business.
@@ -13,9 +13,9 @@
           grown tremendously by expanding our operation into several distinct
           businesses involves:
         </p>
-        <div class="flex flex-row flex-wrap mt-16">
+        <div class="flex flex-row flex-wrap mt-16 mb-10">
           <div class="w-full">
-            <div class="grid grid-cols-3 gap-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
               <div class="w-20">
                 <img
                   src="~/assets/images/training.svg"
@@ -48,10 +48,9 @@
           </div>
         </div>
       </div>
-      <div class="w-full xl:w-2/5">
+      <div class="w-full xl:w-2/5 mx-auto">
         <lottie
-          :width="500"
-          :height="500"
+          width="100%"
           :options="lottieOptions"
           @animCreated="handleAnimation"
         />
