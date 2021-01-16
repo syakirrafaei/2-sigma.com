@@ -16,11 +16,11 @@
         <div class="flex flex-row flex-wrap mt-16">
           <div class="w-full">
             <div class="grid grid-cols-3 gap-4">
-              <div class="w-24">
+              <div class="w-20">
                 <img
                   src="~/assets/images/training.svg"
                   alt="training with two sigma technologies"
-                  class="h-24 w-24"
+                  class="h-20 w-20"
                 />
                 <div class="text-center font-semibold mt-2">Training</div>
               </div>
@@ -28,7 +28,7 @@
                 <img
                   src="~/assets/images/web-development.svg"
                   alt="web development with two sigma technologies"
-                  class="h-24 w-24"
+                  class="h-20 w-20"
                 />
                 <div class="text-center font-semibold mt-2">
                   Web Development
@@ -38,7 +38,7 @@
                 <img
                   src="~/assets/images/mobile-development.svg"
                   alt="mobile development with two sigma technologies"
-                  class="h-24 w-24"
+                  class="h-20 w-20"
                 />
                 <div class="text-center font-semibold mt-2">
                   Mobile Development
@@ -48,10 +48,37 @@
           </div>
         </div>
       </div>
-      <div class="w-full xl:w-2/5"></div>
+      <div class="w-full xl:w-2/5">
+        <lottie
+          :width="500"
+          :height="500"
+          :options="lottieOptions"
+          @animCreated="handleAnimation"
+        />
+      </div>
     </div>
   </section>
 </template>
+<script>
+import lottie from 'vue-lottie/src/lottie.vue'
+import * as animationData from '~/assets/lf30_editor_8jyim1di.json'
+export default {
+  components: {
+    lottie,
+  },
+  data() {
+    return {
+      anim: null, // for saving the reference to the animation
+      lottieOptions: { animationData: animationData.default },
+    }
+  },
+  methods: {
+    handleAnimation(anim) {
+      this.anim = anim
+    },
+  },
+}
+</script>
 <style scoped>
 .bg-section {
   background: transparent
