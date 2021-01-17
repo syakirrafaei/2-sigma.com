@@ -57,11 +57,7 @@
         </div>
       </div>
       <div class="w-full xl:w-2/5 mx-auto">
-        <lottie
-          width="100%"
-          :options="lottieOptions"
-          @animCreated="handleAnimation"
-        />
+        <lottie :options="lottieOptions" @animCreated="handleAnimation" />
       </div>
     </div>
   </section>
