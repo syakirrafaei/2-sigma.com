@@ -30,6 +30,9 @@
 </template>
 <script>
 export default {
+  props: {
+    hero: Object,
+  },
   data() {
     return {
       isLoading: true,
