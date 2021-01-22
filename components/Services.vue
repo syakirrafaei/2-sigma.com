@@ -23,7 +23,7 @@
                   >
                     <img
                       src="~/assets/images/training.svg"
-                      alt="training with two sigma technologies"
+                      alt="IT software training"
                       class="h-16 w-16 md:h-32 md:w-32 my-auto p-2 pb-4"
                     />
                     <div class="text-center font-semibold mt-2">Training</div>
@@ -37,7 +37,7 @@
                   >
                     <img
                       src="~/assets/images/web-development.svg"
-                      alt="web development with two sigma technologies"
+                      alt="web development"
                       class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pb-4"
                     />
                     <div class="text-center font-semibold mt-2">Web App</div>
@@ -51,7 +51,7 @@
                   >
                     <img
                       src="~/assets/images/mobile-development.svg"
-                      alt="mobile development with two sigma technologies"
+                      alt="mobile development"
                       class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pt-2 pb-4"
                     />
                     <div class="text-center font-semibold mt-2">Mobile App</div>
@@ -66,7 +66,7 @@
                   >
                     <img
                       src="~/assets/images/it_infrastructure.svg"
-                      alt="mobile development with two sigma technologies"
+                      alt="IT infrastructure"
                       class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pt-2 pb-4"
                     />
                     <div class="text-center font-semibold mt-2">
@@ -82,10 +82,12 @@
                   >
                     <img
                       src="~/assets/images/consultancy.svg"
-                      alt="mobile development with two sigma technologies"
+                      alt="consultancy"
                       class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pt-2 pb-4"
                     />
-                    <div class="text-center font-semibold mt-2">Training</div>
+                    <div class="text-center font-semibold mt-2">
+                      Consultancy
+                    </div>
                   </div>
                 </div>
               </div>
@@ -119,7 +121,7 @@ export default {
   },
 }
 </script>
-<style scoped>
+<style>
 .bg-section {
   background: transparent
     linear-gradient(1deg, #17141b 0%, #18151c 10%, #17141b 92%, #160100 100%) 0%
