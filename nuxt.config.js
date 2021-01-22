@@ -39,7 +39,7 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: 'http://localhost:1337',
+    baseURL: 'https://api.2-sigma.com',
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
