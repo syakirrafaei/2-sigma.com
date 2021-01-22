@@ -9,11 +9,7 @@
             About Us
           </div>
           <div class="mt-6 xl:mt-2 w-full text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-            suscipit in voluptates veniam iure natus ullam quos facilis soluta
-            iusto quaerat nemo, quidem voluptate id temporibus eveniet quo aut
-            veritatis deserunt libero dolore quis nesciunt! Labore praesentium
-            nemo totam ratione?
+            {{ content }}
           </div>
         </div>
         <div class="w-full xl:w-1/2">
@@ -23,6 +19,13 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+  props: {
+    content: String,
+  },
+}
+</script>
 <style>
 .bg-about {
   background: linear-gradient(

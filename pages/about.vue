@@ -1,24 +1,24 @@
 <template>
   <div>
-    <About />
+    <About :content="about.content" />
   </div>
 </template>
 <script>
 export default {
   async asyncData({ $axios }) {
-    const service = await $axios.$get('/homepage')
+    const about = await $axios.$get('/about')
 
-    return { service }
+    return { about }
   },
   head() {
     return {
-      title: 'About Us',
+      title: this.about.meta_title,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: 'description',
           name: 'description',
-          content: this.service.meta_description,
+          content: this.about.meta_description,
         },
       ],
     }

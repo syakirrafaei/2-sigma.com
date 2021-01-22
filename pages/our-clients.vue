@@ -9,11 +9,7 @@
             Our Clients
           </div>
           <div class="mt-6 xl:mt-2 w-full text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-            suscipit in voluptates veniam iure natus ullam quos facilis soluta
-            iusto quaerat nemo, quidem voluptate id temporibus eveniet quo aut
-            veritatis deserunt libero dolore quis nesciunt! Labore praesentium
-            nemo totam ratione?
+            {{ metas.content }}
           </div>
         </div>
         <div class="w-full xl:w-1/2">
@@ -37,21 +33,8 @@
 export default {
   async asyncData({ $axios }) {
     const clients = await $axios.$get('/client-logos')
-
-    return { clients }
-  },
-  head() {
-    return {
-      title: 'Our Clients',
-      meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Clients description',
-        },
-      ],
-    }
+    const metas = await $axios.$get('/our-clients')
+    return { clients, metas }
   },
   data() {
     return {
@@ -91,6 +74,19 @@ export default {
           },
         ],
       },
+    }
+  },
+  head() {
+    return {
+      title: this.metas.meta_title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.metas.meta_description,
+        },
+      ],
     }
   },
 }

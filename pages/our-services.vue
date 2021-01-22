@@ -9,11 +9,7 @@
             Our Services
           </div>
           <div class="mt-6 xl:mt-2 w-full text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-            suscipit in voluptates veniam iure natus ullam quos facilis soluta
-            iusto quaerat nemo, quidem voluptate id temporibus eveniet quo aut
-            veritatis deserunt libero dolore quis nesciunt! Labore praesentium
-            nemo totam ratione?
+            {{ service.content }}
           </div>
         </div>
       </div>
@@ -42,10 +38,7 @@
         <div class="order-2 xl:w-5/6 mb-12">
           <h1 class="text-2xl text-orange-600 font-semibold">IT Training</h1>
           <p class="xl:w-2/3 mt-2 text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            harum beatae reiciendis architecto ea nesciunt neque, sapiente
-            corporis delectus! Ex at facere voluptate suscipit perspiciatis
-            ullam expedita nobis praesentium aperiam?
+            {{ service.training }}
           </p>
         </div>
         <div class="order-4 xl:order-3 text-right mb-12 xl:mb-0 xl:w-5/6">
@@ -53,10 +46,7 @@
             Website Development and Design
           </h1>
           <p class="xl:w-2/3 ml-auto mt-2 text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            harum beatae reiciendis architecto ea nesciunt neque, sapiente
-            corporis delectus! Ex at facere voluptate suscipit perspiciatis
-            ullam expedita nobis praesentium aperiam?
+            {{ service.website }}
           </p>
         </div>
         <div class="order-3 xl:order-4 w-full xl:w-1/6 xl:mb-12">
@@ -90,10 +80,7 @@
             Mobile Application
           </h1>
           <p class="xl:w-2/3 mt-2 text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            harum beatae reiciendis architecto ea nesciunt neque, sapiente
-            corporis delectus! Ex at facere voluptate suscipit perspiciatis
-            ullam expedita nobis praesentium aperiam?
+            {{ service.mobile }}
           </p>
         </div>
         <div class="order-8 xl:order-7 text-right xl:w-5/6">
@@ -101,10 +88,7 @@
             IT Infrastructure and Hardware
           </h1>
           <p class="xl:w-2/3 ml-auto mt-2 text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            harum beatae reiciendis architecto ea nesciunt neque, sapiente
-            corporis delectus! Ex at facere voluptate suscipit perspiciatis
-            ullam expedita nobis praesentium aperiam?
+            {{ service.infrastructure }}
           </p>
         </div>
         <div class="order-7 xl:order-8 w-full xl:w-1/6">
@@ -124,3 +108,25 @@
     </section>
   </div>
 </template>
+<script>
+export default {
+  async asyncData({ $axios }) {
+    const service = await $axios.$get('/our-services')
+
+    return { service }
+  },
+  head() {
+    return {
+      title: this.service.meta_title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.service.meta_description,
+        },
+      ],
+    }
+  },
+}
+</script>
