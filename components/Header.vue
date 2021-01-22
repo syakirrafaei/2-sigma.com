@@ -6,37 +6,52 @@
       <div class="flex w-2/5 text-center">
         <nuxt-link
           to="/about"
+          :class="$nuxt.$route.path === '/about' ? activeClass : ''"
           class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
+          @click="setActive('about')"
           >About Us</nuxt-link
         >
         <nuxt-link
           to="/our-services"
+          :class="$nuxt.$route.path === '/our-services' ? activeClass : ''"
           class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
           >Our Services</nuxt-link
         >
-        <div class="w-full">Our Clients</div>
+        <nuxt-link
+          to="/our-clients"
+          :class="$nuxt.$route.path === '/our-clients' ? activeClass : ''"
+          class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
+          >Our Clients</nuxt-link
+        >
       </div>
       <nuxt-link
         to="/"
+        :class="$nuxt.$route.path === '/' ? activeClass : ''"
         class="w-1/5 text-center font-bold hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
         >TWO SIGMA</nuxt-link
       >
       <div class="flex w-2/5 text-center">
-        <div
+        <nuxt-link
+          to="/training-offered"
+          :class="$nuxt.$route.path === '/training-offered' ? activeClass : ''"
           class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
         >
           Training Offered
-        </div>
-        <div
+        </nuxt-link>
+        <nuxt-link
+          to="/contact-us"
+          :class="$nuxt.$route.path === '/contact-us' ? activeClass : ''"
           class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
         >
           Contact Us
-        </div>
-        <div
+        </nuxt-link>
+        <nuxt-link
+          to="/careers"
+          :class="$nuxt.$route.path === '/careers' ? activeClass : ''"
           class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
         >
           Careers
-        </div>
+        </nuxt-link>
       </div>
     </div>
     <div class="xl:hidden fixed top-0 right-0 mt-6 mr-6" style="z-index: 99">
@@ -89,6 +104,8 @@ export default {
   data() {
     return {
       showMenu: false,
+      activeClass:
+        'border-orange-700 text-orange-600 border-b-2 border-transparent',
     }
   },
   watch: {
