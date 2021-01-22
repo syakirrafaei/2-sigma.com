@@ -74,11 +74,33 @@
         <div
           class="flex flex-col flex-wrap text-white text-center text-2xl font-semibold px-6 py-12 mt-20"
         >
-          <nuxt-link to="/" class="mb-8">Home</nuxt-link>
-          <nuxt-link to="/about" class="mb-8">About Us</nuxt-link>
-          <nuxt-link to="/our-services" class="mb-8">Our Services</nuxt-link>
-          <nuxt-link to="/our-clients" class="mb-8">Our Clients</nuxt-link>
-          <nuxt-link to="/contact-us" class="mb-8">Contact Us</nuxt-link>
+          <nuxt-link to="/" class="mb-8" @click.native="showMenu = !showMenu"
+            >Home</nuxt-link
+          >
+          <nuxt-link
+            to="/about"
+            class="mb-8"
+            @click.native="showMenu = !showMenu"
+            >About Us</nuxt-link
+          >
+          <nuxt-link
+            to="/our-services"
+            class="mb-8"
+            @click.native="showMenu = !showMenu"
+            >Our Services</nuxt-link
+          >
+          <nuxt-link
+            to="/our-clients"
+            class="mb-8"
+            @click.native="showMenu = !showMenu"
+            >Our Clients</nuxt-link
+          >
+          <nuxt-link
+            to="{ path: '/', hash: '#contact' }"
+            class="mb-8"
+            @click.native="showMenu = !showMenu"
+            >Contact Us</nuxt-link
+          >
         </div>
       </div>
     </transition>

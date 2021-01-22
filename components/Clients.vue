@@ -1,5 +1,5 @@
 <template>
-  <section class="h-screen w-full bg-section p-16">
+  <section class="w-full bg-section p-16">
     <div class="inline-block">
       <div class="text-3xl font-bold text-orange">Our Happy Clients.</div>
       <div class="block py-1 divider-orange opacity-75"></div>
@@ -22,6 +22,7 @@
         :alt="client.client_name"
       />
     </VueSlickCarousel>
+    <div class="my-3"></div>
   </section>
 </template>
 <script>
@@ -35,7 +36,7 @@ export default {
         dots: true,
         dotsClass: 'slick-dots custom-dot-class',
         edgeFriction: 0.35,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 6,
         slidesToScroll: 1,
@@ -45,8 +46,7 @@ export default {
             settings: {
               slidesToShow: 6,
               slidesToScroll: 6,
-              infinite: true,
-              dots: true,
+              rows: 2,
             },
           },
           {
@@ -54,14 +54,14 @@ export default {
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
-              initialSlide: 2,
+              rows: 1,
             },
           },
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToShow: 1,
+              slidesToScroll: 1,
               rows: 1,
             },
           },

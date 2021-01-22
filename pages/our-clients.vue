@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    <section class="px-16 py-10">
+    <section class="px-16 py-32 bg-section">
       <VueSlickCarousel v-if="clients.length > 0" v-bind="settings">
         <img
           v-for="client in clients"

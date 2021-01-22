@@ -15,7 +15,7 @@
         </p>
         <div class="flex flex-row flex-wrap mt-16 mb-10">
           <div class="w-full">
-            <div class="grid grid-cols-6 md:grid-cols-6 gap-4 gap-y-16">
+            <div class="grid md:grid-cols-6 gap-4 gap-y-16">
               <div class="col-start-1 col-span-2">
                 <div class="w-16 md:w-32">
                   <div
@@ -26,7 +26,11 @@
                       alt="IT software training"
                       class="h-16 w-16 md:h-32 md:w-32 my-auto p-2 pb-4"
                     />
-                    <div class="text-center font-semibold mt-2">Training</div>
+                    <div
+                      class="text-xs xl:text-base text-center font-semibold mt-2"
+                    >
+                      Training
+                    </div>
                   </div>
                 </div>
               </div>
@@ -40,7 +44,11 @@
                       alt="web development"
                       class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pb-4"
                     />
-                    <div class="text-center font-semibold mt-2">Website</div>
+                    <div
+                      class="text-xs xl:text-base text-center font-semibold mt-2"
+                    >
+                      Website
+                    </div>
                   </div>
                 </div>
               </div>
@@ -54,7 +62,11 @@
                       alt="mobile development"
                       class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pt-2 pb-4"
                     />
-                    <div class="text-center font-semibold mt-2">Mobile App</div>
+                    <div
+                      class="text-xs xl:text-base text-center font-semibold mt-2"
+                    >
+                      Mobile App
+                    </div>
                   </div>
                 </div>
               </div>
@@ -69,7 +81,9 @@
                       alt="IT infrastructure"
                       class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pt-2 pb-4"
                     />
-                    <div class="text-center font-semibold mt-2">
+                    <div
+                      class="text-xs xl:text-base text-center font-semibold mt-2"
+                    >
                       IT Infrastructure
                     </div>
                   </div>
@@ -85,7 +99,9 @@
                       alt="consultancy"
                       class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pt-2 pb-4"
                     />
-                    <div class="text-center font-semibold mt-2">
+                    <div
+                      class="text-xs xl:text-base text-center font-semibold mt-2"
+                    >
                       Consultancy
                     </div>
                   </div>
@@ -95,7 +111,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full xl:w-2/5 mx-auto">
+      <div class="w-full xl:w-2/5 pt-10 mx-auto">
         <lottie :options="lottieOptions" @animCreated="handleAnimation" />
       </div>
     </div>
