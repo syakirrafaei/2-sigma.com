@@ -32,8 +32,8 @@
           >Our Clients</nuxt-link
         >
         <nuxt-link
-          to="/contact-us"
-          :class="$nuxt.$route.path === '/contact-us' ? activeClass : ''"
+          :to="{ path: '/', hash: '#contact' }"
+          :class="$nuxt.$route.path === '/#contact' ? activeClass : ''"
           class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
         >
           Contact Us

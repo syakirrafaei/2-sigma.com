@@ -5,11 +5,36 @@
       <div class="block py-1 bg-white opacity-75"></div>
     </div>
     <div class="flex flex-row flex-wrap text-white my-8">
-      <div class="w-full xl:w-3/5">
-        <p class="xl:pr-64 text-lg">You can reach us at:</p>
-        <div class="flex flex-row flex-wrap mt-16"></div>
+      <div class="w-1/2">
+        <h3 class="text-xl text-gray-900 font-semibold">
+          You can locate us at:
+        </h3>
+        <p class="mb-8 xl:w-1/2">
+          19-2 Jalan PGN 1A/1, Pinggiran Batu Caves, Batu Caves Selangor 68100
+          Malaysia
+        </p>
+        <h3 class="text-xl text-gray-900 font-semibold">
+          Contact Information:
+        </h3>
+        <ul class="text-lg">
+          <li>+603-6188 0601</li>
+          <li></li>
+          <li>+6012-775 3400</li>
+        </ul>
       </div>
-      <div class="w-full xl:w-2/5"></div>
+      <div class="w-1/2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15933.596955824112!2d101.6926258!3d3.2505418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa957d5a0dbe53cc8!2sTwo%20Sigma%20Technologies!5e0!3m2!1sen!2smy!4v1611347951161!5m2!1sen!2smy"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          class="rounded-xl shadow-lg"
+        ></iframe>
+      </div>
     </div>
   </section>
 </template>
