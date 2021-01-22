@@ -14,7 +14,7 @@
           class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
           >Our Services</nuxt-link
         >
-        <div class="w-full ">Our Clients</div>
+        <div class="w-full">Our Clients</div>
       </div>
       <nuxt-link
         to="/"
@@ -22,9 +22,21 @@
         >TWO SIGMA</nuxt-link
       >
       <div class="flex w-2/5 text-center">
-        <div class="w-full text-center font-bold bg-red-400 hover:border-transparent hover:shadow-lg">Training Offered</div>
-        <div class="w-full text-center font-bold bg-red-400 hover:border-transparent hover:shadow-lg">Contact Us</div>
-        <div class="w-full text-center font-bold bg-red-400 hover:border-transparent hover:shadow-lg">Careers</div>
+        <div
+          class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
+        >
+          Training Offered
+        </div>
+        <div
+          class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
+        >
+          Contact Us
+        </div>
+        <div
+          class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
+        >
+          Careers
+        </div>
       </div>
     </div>
     <div class="xl:hidden fixed top-0 right-0 mt-6 mr-6" style="z-index: 99">
