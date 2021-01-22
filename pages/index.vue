@@ -2,7 +2,7 @@
   <div>
     <Hero :hero="hero" />
     <Services />
-    <Clients />
+    <Clients :clients="clients" />
     <Contact />
   </div>
 </template>
@@ -10,8 +10,9 @@
 export default {
   async asyncData({ $axios }) {
     const hero = await $axios.$get('/homepage')
+    const clients = await $axios.$get('/client-logos')
 
-    return { hero }
+    return { hero, clients }
   },
   head() {
     return {
