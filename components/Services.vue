@@ -15,41 +15,78 @@
         </p>
         <div class="flex flex-row flex-wrap mt-16 mb-10">
           <div class="w-full">
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 gap-y-16">
-              <div class="w-16 md:w-32">
-                <div
-                  class="h-16 w-16 md:h-32 md:w-32 rounded-full shadow-lg bg-gray-900 border border-orange-700"
-                >
-                  <img
-                    src="~/assets/images/training.svg"
-                    alt="training with two sigma technologies"
-                    class="h-16 w-16 md:h-32 md:w-32 my-auto p-2 pb-4"
-                  />
-                  <div class="text-center font-semibold mt-2">Training</div>
+            <div class="grid grid-cols-6 md:grid-cols-6 gap-4 gap-y-16">
+              <div class="col-start-1 col-span-2">
+                <div class="w-16 md:w-32">
+                  <div
+                    class="h-16 w-16 md:h-32 md:w-32 rounded-full shadow-lg bg-gray-900 border border-orange-700"
+                  >
+                    <img
+                      src="~/assets/images/training.svg"
+                      alt="training with two sigma technologies"
+                      class="h-16 w-16 md:h-32 md:w-32 my-auto p-2 pb-4"
+                    />
+                    <div class="text-center font-semibold mt-2">Training</div>
+                  </div>
                 </div>
               </div>
-              <div class="w-16 md:w-32">
-                <div
-                  class="h-16 w-16 md:h-32 md:w-32 rounded-full shadow-xl bg-gray-900 border border-orange-700"
-                >
-                  <img
-                    src="~/assets/images/web-development.svg"
-                    alt="web development with two sigma technologies"
-                    class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pb-4"
-                  />
-                  <div class="text-center font-semibold mt-2">Web App</div>
+              <div class="col-start-3 col-span-2">
+                <div class="w-16 md:w-32">
+                  <div
+                    class="h-16 w-16 md:h-32 md:w-32 rounded-full shadow-xl bg-gray-900 border border-orange-700"
+                  >
+                    <img
+                      src="~/assets/images/web-development.svg"
+                      alt="web development with two sigma technologies"
+                      class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pb-4"
+                    />
+                    <div class="text-center font-semibold mt-2">Web App</div>
+                  </div>
                 </div>
               </div>
-              <div class="w-16 md:w-32">
-                <div
-                  class="h-16 w-16 md:h-32 md:w-32 rounded-full shadow-lg bg-gray-900 border border-orange-700"
-                >
-                  <img
-                    src="~/assets/images/mobile-development.svg"
-                    alt="mobile development with two sigma technologies"
-                    class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pt-2 pb-4"
-                  />
-                  <div class="text-center font-semibold mt-2">Mobile App</div>
+              <div class="col-start-5 col-span-2">
+                <div class="w-16 md:w-32">
+                  <div
+                    class="h-16 w-16 md:h-32 md:w-32 rounded-full shadow-lg bg-gray-900 border border-orange-700"
+                  >
+                    <img
+                      src="~/assets/images/mobile-development.svg"
+                      alt="mobile development with two sigma technologies"
+                      class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pt-2 pb-4"
+                    />
+                    <div class="text-center font-semibold mt-2">Mobile App</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-start-2 col-end-4">
+                <div class="w-16 md:w-32">
+                  <div
+                    class="h-16 w-16 md:h-32 md:w-32 rounded-full shadow-lg bg-gray-900 border border-orange-700"
+                  >
+                    <img
+                      src="~/assets/images/it_infrastructure.svg"
+                      alt="mobile development with two sigma technologies"
+                      class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pt-2 pb-4"
+                    />
+                    <div class="text-center font-semibold mt-2">
+                      IT Infrastructure
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-end-6 col-span-2">
+                <div class="w-16 md:w-32">
+                  <div
+                    class="h-16 w-16 md:h-32 md:w-32 rounded-full shadow-lg bg-gray-900 border border-orange-700"
+                  >
+                    <img
+                      src="~/assets/images/consultancy.svg"
+                      alt="mobile development with two sigma technologies"
+                      class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pt-2 pb-4"
+                    />
+                    <div class="text-center font-semibold mt-2">Training</div>
+                  </div>
                 </div>
               </div>
             </div>
