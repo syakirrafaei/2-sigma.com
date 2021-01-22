@@ -3,7 +3,7 @@
     <Hero :hero="hero" />
     <Services />
     <Clients :clients="clients" />
-    <Contact />
+    <section id="contact"><Contact /></section>
   </div>
 </template>
 <script>
