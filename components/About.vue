@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="bg-about px-20 xl:px-24 h-screen">
+    <div class="bg-about px-16 h-screen">
       <div class="flex flex-row flex-wrap text-white py-40">
         <div class="w-full xl:w-1/2">
           <div
