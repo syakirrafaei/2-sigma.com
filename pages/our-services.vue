@@ -40,7 +40,7 @@
           </div>
         </div>
         <div class="order-2 xl:w-5/6 mb-12">
-          <h1 class="text-2xl text-gray-100 font-semibold">IT Training</h1>
+          <h1 class="text-2xl text-orange-600 font-semibold">IT Training</h1>
           <p class="xl:w-2/3 mt-2 text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
             harum beatae reiciendis architecto ea nesciunt neque, sapiente
@@ -49,7 +49,7 @@
           </p>
         </div>
         <div class="order-4 xl:order-3 text-right mb-12 xl:mb-0 xl:w-5/6">
-          <h1 class="text-2xl text-gray-100 font-semibold">
+          <h1 class="text-2xl text-orange-600 font-semibold">
             Website Development and Design
           </h1>
           <p class="xl:w-2/3 ml-auto mt-2 text-white">
@@ -86,7 +86,7 @@
           </div>
         </div>
         <div class="order-6 xl:w-5/6 mb-12">
-          <h1 class="text-2xl text-gray-100 font-semibold">
+          <h1 class="text-2xl text-orange-600 font-semibold">
             Mobile Application
           </h1>
           <p class="xl:w-2/3 mt-2 text-white">
@@ -97,7 +97,7 @@
           </p>
         </div>
         <div class="order-8 xl:order-7 text-right xl:w-5/6">
-          <h1 class="text-2xl text-gray-100 font-semibold">
+          <h1 class="text-2xl text-orange-600 font-semibold">
             IT Infrastructure and Hardware
           </h1>
           <p class="xl:w-2/3 ml-auto mt-2 text-white">
