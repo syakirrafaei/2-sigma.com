@@ -26,7 +26,7 @@
         <div class="block py-1 divider-orange opacity-75"></div>
       </div>
       <div class="flex flex-row flex-wrap py-10">
-        <div class="xl:w-1/6">
+        <div class="order-1 xl:w-1/6">
           <div class="w-16 md:w-32">
             <div
               class="h-16 w-16 md:h-32 md:w-32 rounded-full shadow-lg bg-gray-900 border border-orange-700"
@@ -39,7 +39,7 @@
             </div>
           </div>
         </div>
-        <div class="xl:w-5/6 mb-8">
+        <div class="order-2 xl:w-5/6 mb-12">
           <h1 class="text-2xl text-gray-100 font-semibold">IT Training</h1>
           <p class="xl:w-2/3 mt-2 text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
@@ -48,7 +48,7 @@
             ullam expedita nobis praesentium aperiam?
           </p>
         </div>
-        <div class="text-right xl:w-5/6">
+        <div class="order-4 xl:order-3 text-right mb-12 xl:mb-0 xl:w-5/6">
           <h1 class="text-2xl text-gray-100 font-semibold">
             Website Development and Design
           </h1>
@@ -59,7 +59,7 @@
             ullam expedita nobis praesentium aperiam?
           </p>
         </div>
-        <div class="xl:w-1/6">
+        <div class="order-3 xl:order-4 w-full xl:w-1/6 xl:mb-12">
           <div class="ml-auto w-16 md:w-32">
             <div
               class="h-16 w-16 md:h-32 md:w-32 rounded-full shadow-xl bg-gray-900 border border-orange-700"
@@ -72,7 +72,7 @@
             </div>
           </div>
         </div>
-        <div class="xl:w-1/6">
+        <div class="order-5 xl:w-1/6">
           <div class="w-16 md:w-32">
             <div
               class="h-16 w-16 md:h-32 md:w-32 rounded-full shadow-lg bg-gray-900 border border-orange-700"
@@ -85,7 +85,7 @@
             </div>
           </div>
         </div>
-        <div class="xl:w-5/6 mb-8">
+        <div class="order-6 xl:w-5/6 mb-12">
           <h1 class="text-2xl text-gray-100 font-semibold">
             Mobile Application
           </h1>
@@ -96,7 +96,7 @@
             ullam expedita nobis praesentium aperiam?
           </p>
         </div>
-        <div class="text-right xl:w-5/6">
+        <div class="order-8 xl:order-7 text-right xl:w-5/6">
           <h1 class="text-2xl text-gray-100 font-semibold">
             IT Infrastructure and Hardware
           </h1>
@@ -107,7 +107,7 @@
             ullam expedita nobis praesentium aperiam?
           </p>
         </div>
-        <div class="xl:w-1/6">
+        <div class="order-7 xl:order-8 w-full xl:w-1/6">
           <div class="ml-auto w-16 md:w-32">
             <div
               class="h-16 w-16 md:h-32 md:w-32 rounded-full shadow-xl bg-gray-900 border border-orange-700"
