@@ -17,12 +17,6 @@
           class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
           >Our Services</nuxt-link
         >
-        <nuxt-link
-          to="/our-clients"
-          :class="$nuxt.$route.path === '/our-clients' ? activeClass : ''"
-          class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
-          >Our Clients</nuxt-link
-        >
       </div>
       <nuxt-link
         to="/"
@@ -32,25 +26,17 @@
       >
       <div class="flex w-2/5 text-center">
         <nuxt-link
-          to="/training-offered"
-          :class="$nuxt.$route.path === '/training-offered' ? activeClass : ''"
+          to="/our-clients"
+          :class="$nuxt.$route.path === '/our-clients' ? activeClass : ''"
           class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
+          >Our Clients</nuxt-link
         >
-          Training Offered
-        </nuxt-link>
         <nuxt-link
           to="/contact-us"
           :class="$nuxt.$route.path === '/contact-us' ? activeClass : ''"
           class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
         >
           Contact Us
-        </nuxt-link>
-        <nuxt-link
-          to="/careers"
-          :class="$nuxt.$route.path === '/careers' ? activeClass : ''"
-          class="w-full hover:text-orange-600 border-b-2 border-transparent hover:border-orange-700 pb-2"
-        >
-          Careers
         </nuxt-link>
       </div>
     </div>
@@ -88,12 +74,11 @@
         <div
           class="flex flex-col flex-wrap text-white text-center text-2xl font-semibold px-6 py-12 mt-20"
         >
+          <nuxt-link to="/" class="mb-8">Home</nuxt-link>
           <nuxt-link to="/about" class="mb-8">About Us</nuxt-link>
-          <div class="mb-8">Our Services</div>
-          <div class="mb-8">Our Clients</div>
-          <div class="mb-8">Training Offered</div>
-          <div class="mb-8">Contact Us</div>
-          <div class="mb-8">Careers</div>
+          <nuxt-link to="/our-services" class="mb-8">Our Services</nuxt-link>
+          <nuxt-link to="/our-clients" class="mb-8">Our Clients</nuxt-link>
+          <nuxt-link to="/contact-us" class="mb-8">Contact Us</nuxt-link>
         </div>
       </div>
     </transition>
