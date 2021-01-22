@@ -40,7 +40,7 @@
                       alt="web development"
                       class="h-16 w-16 md:h-32 md:w-32 my-auto mx-auto pb-4"
                     />
-                    <div class="text-center font-semibold mt-2">Web App</div>
+                    <div class="text-center font-semibold mt-2">Website</div>
                   </div>
                 </div>
               </div>
