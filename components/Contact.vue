@@ -6,14 +6,14 @@
     </div>
     <div class="flex flex-row flex-wrap text-white my-8">
       <div class="w-full xl:w-1/2">
-        <h3 class="text-xl text-gray-900 font-semibold">
+        <h3 class="text-xl text-gray-200 font-semibold">
           You can locate us at:
         </h3>
         <p class="mb-8 xl:w-1/2">
           19-2 Jalan PGN 1A/1, Pinggiran Batu Caves, Batu Caves Selangor 68100
           Malaysia
         </p>
-        <h3 class="text-xl text-gray-900 font-semibold">
+        <h3 class="text-xl text-gray-200 font-semibold">
           Contact Information:
         </h3>
         <ul class="text-lg">
