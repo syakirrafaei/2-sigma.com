@@ -96,7 +96,7 @@
             >Our Clients</nuxt-link
           >
           <nuxt-link
-            to="{ path: '/', hash: '#contact' }"
+            :to="{ path: '/', hash: '#contact' }"
             class="mb-8"
             @click.native="showMenu = !showMenu"
             >Contact Us</nuxt-link
