@@ -9,20 +9,22 @@
       >
         <div class="xl:-ml-10">
           <span class="text-2xl xl:text-3xl"
-            >16+ YEARS OF PROVEN IT SOLUTIONS AND TRAININGS</span
+            >{{ hero.years }}+ YEARS OF PROVEN IT SOLUTIONS AND TRAININGS</span
           >
         </div>
         <div class="mt-10 mb-4">
-          <span class="text-lg xl:text-2xl xl:ml-10">149+</span> satisfied
-          clients.
+          <span class="text-lg xl:text-2xl xl:ml-10">{{ hero.clients }}+</span>
+          satisfied clients.
         </div>
         <div class="my-4">
-          <span class="text-lg xl:text-2xl xl:ml-40">68+</span> training
-          sessions.
+          <span class="text-lg xl:text-2xl xl:ml-40"
+            >{{ hero.trainings }}+</span
+          >
+          training sessions.
         </div>
         <div class="my-4">
-          <span class="text-lg xl:text-2xl xl:ml-64">46+</span> projects
-          delivered.
+          <span class="text-lg xl:text-2xl xl:ml-64">{{ hero.projects }}+</span>
+          projects delivered.
         </div>
       </div>
     </div>
