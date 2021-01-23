@@ -6,7 +6,7 @@
     </div>
     <div class="flex flex-row flex-wrap text-white my-8">
       <div class="w-full xl:w-1/2">
-        <h3 class="text-xl text-gray-900 font-semibold">
+        <h3 class="text-xl text-gray-200 font-semibold">
           You can locate us at:
         </h3>
         <p class="mb-8 xl:w-1/2">
