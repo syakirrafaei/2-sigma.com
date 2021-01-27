@@ -10,16 +10,15 @@
           You can locate us at:
         </h3>
         <p class="mb-8 xl:w-1/2">
-          19-2 Jalan PGN 1A/1, Pinggiran Batu Caves, Batu Caves Selangor 68100
-          Malaysia
+          {{ hero.Address }}
         </p>
         <h3 class="text-xl text-gray-900 font-semibold">
           Contact Information:
         </h3>
         <ul class="text-lg">
-          <li>+603-6188 0601</li>
+          <li>{{ hero.Contact1 }}</li>
           <li></li>
-          <li>+6012-775 3400</li>
+          <li>{{ hero.Contact2 }}</li>
         </ul>
       </div>
       <div class="mt-8 xl:mt-0 w-full xl:w-1/2">
@@ -43,3 +42,15 @@
     padding-box;
 }
 </style>
+<script>
+export default {
+  props: {
+    hero: Object,
+  },
+  data() {
+    return {
+      isLoading: true,
+    }
+  },
+}
+</script>
