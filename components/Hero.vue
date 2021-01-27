@@ -9,22 +9,22 @@
       >
         <div class="xl:-ml-10">
           <span class="text-2xl xl:text-3xl"
-            >{{ hero.years }}+ YEARS OF PROVEN IT SOLUTIONS AND TRAININGS</span
+            >{{ hero.years }}+ {{ hero.YearsContent }}</span
           >
         </div>
         <div class="mt-10 mb-4">
           <span class="text-lg xl:text-2xl xl:ml-10">{{ hero.clients }}+</span>
-          satisfied clients.
+          {{ hero.ClientsContent }}
         </div>
         <div class="my-4">
           <span class="text-lg xl:text-2xl xl:ml-40"
             >{{ hero.trainings }}+</span
           >
-          training sessions.
+          {{ hero.TrainingContent }}
         </div>
         <div class="my-4">
           <span class="text-lg xl:text-2xl xl:ml-64">{{ hero.projects }}+</span>
-          projects delivered.
+          {{ hero.ProjectsContent }}
         </div>
       </div>
     </div>
