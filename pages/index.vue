@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero :hero="hero" />
-    <Services />
+    <Services :hero="hero" />
     <Clients :clients="clients" />
     <section id="contact"><Contact :hero="hero" /></section>
   </div>
