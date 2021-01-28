@@ -1,6 +1,7 @@
 <template>
   <div>
     <About :content="about.content" />
+    <!-- put some error here and comments -->
   </div>
 </template>
 <script>
