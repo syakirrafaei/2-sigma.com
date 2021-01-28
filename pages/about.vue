@@ -1,7 +1,7 @@
 <template>
   <div>
     <About :content="about.content" />
-    <!-- put some error here and comments -->
+    <!-- put some error here and commentssss -->
   </div>
 </template>
 <script>
