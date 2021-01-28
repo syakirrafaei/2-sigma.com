@@ -2,16 +2,14 @@
   <section class="min-h-screen w-full bg-section p-16">
     <div class="inline-block">
       <div class="text-3xl font-bold text-orange">
-        Supercharge your business.
+        {{ hero.Service_Tittle }}
       </div>
       <div class="block py-1 divider-orange opacity-75"></div>
     </div>
     <div class="flex flex-row flex-wrap text-white my-8">
       <div class="w-full xl:w-3/5">
         <p class="xl:pr-64 text-lg">
-          Driven by today’s competitive environment and business needs, we have
-          grown tremendously by expanding our operation into several distinct
-          businesses involves:
+          {{ hero.Service_desc }}
         </p>
         <div class="flex flex-row flex-wrap mt-16 mb-10">
           <div class="w-full">
@@ -124,9 +122,13 @@ export default {
   components: {
     lottie,
   },
+  props: {
+    hero: Object,
+  },
   data() {
     return {
       anim: null, // for saving the reference to the animation
+      isLoading: true,
       lottieOptions: { animationData: animationData.default },
     }
   },
